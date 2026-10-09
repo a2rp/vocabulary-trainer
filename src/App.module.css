@@ -1,0 +1,5 @@
+.app-shell { min-height: 100vh; color: var(--ink); background: var(--paper);
+    .pageContent { width: min(1320px, calc(100% - 56px)); margin: 0 auto; padding: 106px 0 72px;
+        @media (max-width: 680px) { width: calc(100% - 32px); padding-top: 92px; }
+    }
+}

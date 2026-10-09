@@ -1,0 +1,16 @@
+.siteFooter {
+    border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+    .footerInner { width: min(1320px, calc(100% - 56px)); margin: 0 auto; padding: 24px 0 32px; display: flex; align-items: flex-start; justify-content: space-between; gap: 30px;
+        @media (max-width: 760px) { width: calc(100% - 32px); flex-direction: column; }
+    }
+    .identity { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 12px;
+        img { width: 30px; height: 30px; object-fit: contain; }
+    }
+    .footerLinks { max-width: 720px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 17px; color: var(--muted); font-size: 11px;
+        a { display: inline-flex; align-items: center; gap: 5px; transition: color 160ms ease;
+            &:hover { color: var(--ink); }
+            svg { width: 13px; height: 13px; }
+        }
+        @media (max-width: 760px) { justify-content: flex-start; }
+    }
+}

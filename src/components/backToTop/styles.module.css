@@ -1,0 +1,5 @@
+.backToTop { position: fixed; z-index: 15; right: 22px; bottom: 22px; min-width: 48px; min-height: 48px; display: grid; place-items: center; gap: 1px; padding: 7px; border: 1px solid var(--accent); border-radius: 14px; color: var(--paper); background: var(--accent); box-shadow: 0 5px 20px color-mix(in srgb, var(--ink) 18%, transparent); font-size: 10px; font-weight: 650;
+    svg { width: 16px; height: 16px; }
+    &:hover { box-shadow: 0 7px 24px color-mix(in srgb, var(--accent) 30%, transparent); }
+    @media (max-width: 600px) { right: 14px; bottom: 14px; }
+}
