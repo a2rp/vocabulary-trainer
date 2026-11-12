@@ -20,9 +20,9 @@ Select a word from the list, enter a definition guess, and check it or reveal th
 
 ## Data and limits
 
-Custom words and mastery selections are stored in this browser with localStorage.
+Custom words and mastery selections are stored in this browser with localStorage. The list is limited to 500 words, and custom words and definitions have length limits.
 
-Answer checking currently compares your guess with the stored definition text. The app does not sync or track review intervals.
+Answer checking compares your guess with the stored definition after ignoring capitalization, punctuation, and extra whitespace. It does not understand paraphrases, sync data, or track review intervals. If browser storage is unavailable, updates remain only until the page is closed.
 
 ## Run locally
 
